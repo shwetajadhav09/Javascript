@@ -31,3 +31,15 @@ console.log(booleanIsLoggedIn)
 //0 =>false
 // "" => false
 // "shweta" => true
+
+console.log("1"+2);  //12
+console.log(1+1+"2"); // 22
+
+console.log(+true); // 1
+console.log(+""); // 0
+
+
+
+
+
+
