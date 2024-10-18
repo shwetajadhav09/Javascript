@@ -21,3 +21,13 @@ heap -> non-primitive
 
 */
 
+let userOne = {
+    email : "shweta@google.com",
+    upi: "shweta@okaxis"
+}
+
+let usertwo = userOne;
+
+usertwo.email = "scj@.com";
+
+console.log(userOne);
