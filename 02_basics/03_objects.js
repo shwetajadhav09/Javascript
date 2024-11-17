@@ -50,8 +50,25 @@ const obj1 = {"a": 1, "b": 2};
 const obj2 = {"c": 1, "d": 2};
 
 const obj3 = Object.assign({}, obj1, obj2)
-console.log(obj3);
+// console.log(obj3);
 
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(user.hasOwnProperty('isLoggedIn'));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(user.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Shweta"
+}
+
+const {courseInstructor} = course;
+
+console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course;
+console.log(course);
+
+
+//json api
+
