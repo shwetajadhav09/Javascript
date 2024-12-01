@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## Project link
-[Click here](https://dom-project-chaiaurcode-xtt5cv.stackblitz.io)
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 # Solution code
  ## project 1- Button color changer
@@ -65,6 +65,18 @@ form.addEventListener('submit', function (e) {
 });
 
 
+ ```
+
+ ## Project 3 - 
+
+ ```javascript
+ const clock = document.egetElementById('clock');
+
+ setInterval(function(){
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+ }, 1000);
+ 
  ```
 
  
