@@ -67,7 +67,7 @@ form.addEventListener('submit', function (e) {
 
  ```
 
- ## Project 3 - 
+ ## Project 3 - Digital Clock
 
  ```javascript
  const clock = document.egetElementById('clock');
@@ -79,7 +79,7 @@ form.addEventListener('submit', function (e) {
 
  ```
 
- ## Project 4
+ ## Project 4 - Guess the no
 
  ```javascript
  let random = parseInt(Math.round(Math.random() * 100));
