@@ -56,3 +56,38 @@ then((user) => {
 .finally(()=>{
     console.log('promise is either resolved or rejected')
 })
+
+const promise4 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = false;
+        if(!error){
+            resolve({username: "javascript", password: "123"})
+        } else {
+            reject('Error: JS went wrong')
+        }
+    }, 1000)
+})
+
+async function consumePromise5(){
+    try{
+    const response = await promise4
+    console.log(response);
+    } catch(error){
+        console.log(error)
+    }
+}
+
+consumePromise5()
+
+
+async function getAllUsers(){
+    try{
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await response.json()
+    console.log(data)
+    } catch (error){
+        console.log("Error: ", error);
+    }
+}
+
+getAllUsers()
